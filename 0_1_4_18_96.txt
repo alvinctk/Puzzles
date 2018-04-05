@@ -1,0 +1,50 @@
+Here is the sequence of numbers:
+0, 1, 4, 18, 96, ....
+
+Define f(n) to be the function that generates the n term of sequence.
+
+Let's break down each term of f(n) into its prime factors 
+f(0) = 0 
+f(1) = 1  
+f(2) = 4 = 2^2
+f(3) = 18 = 2 * 3^2 
+f(4) = 96 = 2^5 * 3
+
+We observe that 1 * f(n) is itself.
+Next, we multiple 1 to f(n)
+
+f(0) = 0 * 1 
+f(1) = 1 * 1 
+f(2) = 4 = 2^2 * 1 
+f(3) = 18 = 2 * 3^2 * 1  
+f(4) = 96 = 2^5 * 3 * 1 
+
+We redistribute terms for n >= 1 and taking n = 0 as
+base case. 
+
+f(1) = 1 * 1 
+f(2) = 2 * (2 * 1) 
+f(3) = 3 * (3 * 2 * 1)  
+f(4) = 2^2 * 2^2 * 3 * 2 * 1 = 4 * (4 * 3 * 2 * 1)
+
+
+Rewrite f(n) in terms of n! 
+f(1) = 1 * 1!
+f(2) = 2 * 2!
+f(3) = 3 * 3!
+f(4) = 4 * 4!
+
+Hence we can provide a definition to the sequence:
+f(n) = {   n * n! for n >= 1 
+      and  0      for n = 0 
+} 
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,9 @@
+1 min, 2 min, 7 min, 10min. 
+
+Persons (that used 1 min and 2 min) crossed together.
+Person (that used 1 min) returned back with torch.
+Person (that used 10 min and 7 min) crossed together.
+Persons (that used 2 min) returned back with torch.
+Person (that used 1min and 2min) crossed together. 
+
+Min time = 2min + 1min + 10min + 2min + 2min = 17 min. 
